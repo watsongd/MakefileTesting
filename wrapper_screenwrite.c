@@ -1,5 +1,5 @@
 #include <Python.h>
-#include "include/screenwrite.h"
+#include "src/screenwrite.h"
 
 static PyObject* wrap_writeToScreen(PyObject* self, PyObject* args)
 {

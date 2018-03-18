@@ -2,12 +2,12 @@
 #include <string.h>
 #include <unistd.h>
 #include <stdlib.h>
-#include "include/typedefs.h"
-#include "include/serial.h"
-#include "include/cf_packet.h"
-#include "include/show_packet.h"
+#include "typedefs.h"
+#include "serial.h"
+#include "cf_packet.h"
+#include "show_packet.h"
 
-#include "include/screenwrite.h"
+#include "screenwrite.h"
 
 void writeToScreen(int row, char *message[20])
 {
