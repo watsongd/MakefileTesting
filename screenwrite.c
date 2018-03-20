@@ -12,12 +12,12 @@
 void writeToScreen(int row, char *message[20])
 {
 	//Connect to the display
-	if(Serial_Init("/dev/tty.usbmodem1421",115200))
+	if(Serial_Init("/dev/ttyACM0",115200))
     {
-	    printf("Could not open port \"%s\" at \"%d\" baud.\n","/dev/tty.usbmodem1421",115200);
+	    printf("Could not open port \"%s\" at \"%d\" baud.\n","/dev/ttyACM0",115200);
     }
   	else
-    printf("\"%s\" opened at \"%d\" baud.\n\n","/dev/tty.usbmodem1421",115200);
+    printf("\"%s\" opened at \"%d\" baud.\n\n","/dev/ttyACM0",115200);
 
     //Send line 1 to the 635 using command 31
     outgoing_response.command = 31;
