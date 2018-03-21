@@ -1,1 +1,1 @@
-void writeToScreen(int row, char *message[20]);
+void writeToScreen(int row, char *message);

@@ -9,7 +9,7 @@
 
 #include "screenwrite.h"
 
-void writeToScreen(int row, char *message[20])
+void writeToScreen(int row, char *message)
 {
 	//Connect to the display
 	if(Serial_Init("/dev/ttyACM0",115200))
@@ -18,6 +18,8 @@ void writeToScreen(int row, char *message[20])
     }
   	else
     printf("\"%s\" opened at \"%d\" baud.\n\n","/dev/ttyACM0",115200);
+    printf("message: %c\n", message);
+    printf("row: %i\n", row);
 
     //Send line 1 to the 635 using command 31
     outgoing_response.command = 31;

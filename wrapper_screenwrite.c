@@ -5,11 +5,11 @@ static PyObject* wrap_writeToScreen(PyObject* self, PyObject* args)
 {
 	//store the args
 	int row;
-	char *message[20];
+	char *message;
 
 	//get the args
 	PyArg_ParseTuple(args, "is", &row, &message);
-  	
+
   	//run funct
   	writeToScreen(row, message);
 
